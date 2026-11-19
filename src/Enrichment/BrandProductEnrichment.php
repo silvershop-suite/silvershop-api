@@ -7,7 +7,7 @@ namespace SilverShop\Api\Enrichment;
 use SilverShop\Page\Product;
 
 /**
- * Adds a `brand` object to the serialised product when silvershop/brands is installed.
+ * Adds a `brand` object to the serialised product when silvershop-suite/brands is installed.
  */
 class BrandProductEnrichment extends ProductEnrichmentExtension
 {

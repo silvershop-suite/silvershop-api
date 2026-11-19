@@ -7,7 +7,7 @@ namespace SilverShop\Api\Enrichment;
 use SilverShop\Page\Product;
 
 /**
- * Adds a `rating` object (average + count) to the serialised product when silvershop/reviews is installed.
+ * Adds a `rating` object (average + count) to the serialised product when silvershop-suite/reviews is installed.
  */
 class ReviewProductEnrichment extends ProductEnrichmentExtension
 {

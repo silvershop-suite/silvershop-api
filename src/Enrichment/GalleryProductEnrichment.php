@@ -7,7 +7,7 @@ namespace SilverShop\Api\Enrichment;
 use SilverShop\Page\Product;
 
 /**
- * Adds a `gallery` array of image URLs to the serialised product when silvershop/product-gallery is installed.
+ * Adds a `gallery` array of image URLs to the serialised product when silvershop-suite/product-gallery is installed.
  */
 class GalleryProductEnrichment extends ProductEnrichmentExtension
 {

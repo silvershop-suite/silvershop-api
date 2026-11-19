@@ -7,7 +7,8 @@ namespace SilverShop\Api\Enrichment;
 use SilverShop\Page\Product;
 
 /**
- * Flags the serialised product as `downloadable` when silvershop/downloads is installed and the product has files.
+ * Flags the serialised product as `downloadable` when silvershop-suite/downloads is installed and the product has
+ * files.
  */
 class DownloadProductEnrichment extends ProductEnrichmentExtension
 {

@@ -7,7 +7,7 @@ namespace SilverShop\Api\Enrichment;
 use SilverShop\Page\Product;
 
 /**
- * Adds a `colours` array (hex swatches) to the serialised product when silvershop/colors is installed.
+ * Adds a `colours` array (hex swatches) to the serialised product when silvershop-suite/colors is installed.
  */
 class ColorProductEnrichment extends ProductEnrichmentExtension
 {

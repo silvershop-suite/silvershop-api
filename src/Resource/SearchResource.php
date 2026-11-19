@@ -14,7 +14,7 @@ use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Versioned\Versioned;
 
 /**
- * Bridge to silvershop/search: `GET search?q=…` runs the shop's active search backend and returns the matching
+ * Bridge to silvershop-suite/search: `GET search?q=…` runs the shop's active search backend and returns the matching
  * products (serialised with {@link ProductSerializer}, so soft-dep enrichment applies). Deliberately decoupled —
  * it references the search module only by string class name, so the base API carries no dependency on it and this
  * class is inert (returns 501) when search is not installed. Registered in config guarded by `moduleexists`.
@@ -40,7 +40,10 @@ class SearchResource extends AbstractResource
         }
 
         if (!class_exists(self::REGISTRY_CLASS) || !class_exists(self::QUERY_CLASS)) {
-            throw new ApiException(501, 'Search is not available. Install silvershop/search to enable this resource.');
+            throw new ApiException(
+                501,
+                'Search is not available. Install silvershop-suite/search to enable this resource.'
+            );
         }
 
         $terms = trim((string) $request->getVar('q'));
